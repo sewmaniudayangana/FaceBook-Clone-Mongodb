@@ -1,6 +1,6 @@
 const express=require('express')
 const mongoose=require('mongoose')
-const accountCreate=require('./routes/createAccount')
+const accountCreate=require('./routes/accounts')
 const app=express()
 const port=3000
 
