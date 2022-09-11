@@ -1,6 +1,6 @@
 const express=require('express')
 const router=express.Router()
-const Account=require('../models/createAccount.model')
+const Account=require('../models/accounts.models')
 router.get('/',async(req,res)=>{
     try {
         const account=await Account.find()
