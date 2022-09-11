@@ -5,6 +5,8 @@ const app=express()
 const port=3000
 
 
+app.use(express.json())
+
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const url = "mongodb+srv://facebook:yZh4ZcrsGGR9stcf@cluster0.wzywxdl.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
